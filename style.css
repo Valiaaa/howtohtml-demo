@@ -6,3 +6,28 @@ h1 {
     font-size: 120px;
     line-height: 240px;
 }
+
+
+@-webkit-keyframes move {
+    from { background-position: left top; }
+    to { background-position: right top; }
+}
+
+@-moz-keyframes move {
+    from { background-position: left top; }
+    to { background-position: right top; }
+}
+
+@keyframes move {
+    from { background-position: left top; }
+    to { background-position: right top; }
+}
+
+#tearpic {
+    background-image: url(pic/1-01.png);
+    width: 2048px;
+    height: 1536px;
+    -webkit-animation: move 1s steps(11, end) infinite;
+    -moz-animation: move 1s steps(11, end) infinite;
+    animation: move 1s steps(11, end) infinite;
+}
