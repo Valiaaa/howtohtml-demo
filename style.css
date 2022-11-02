@@ -29,8 +29,13 @@ h1 {
 
 #tearpic {
     background-image: url(pic/1-01.png);
-    width: 2048px;
-    height: 1536px;
+    width: 100vw;
+    height: 100vh;
+    background-size: 1200% 100vh;
+    background-repeat: no-repeat;
+    
+    /* width: 2048px;
+    height: 1536px; */
     -webkit-animation: move 1s steps(11, end) infinite;
     -moz-animation: move 1s steps(11, end) infinite;
     animation: move 1s steps(11, end) infinite;
