@@ -1,41 +1,35 @@
-* {
-    margin: 40px;
-}
-
 body {
+    margin: 0;
     background-color: cornflowerblue;
-}
-
-h1 {
-    font-size: 120px;
-    line-height: 240px;
 }
 
 
 @-webkit-keyframes move {
-    from { background-position: left top; }
-    to { background-position: right top; }
+    from { background-position: center top; }
+    to { background-position: center bottom; }
 }
 
 @-moz-keyframes move {
-    from { background-position: left top; }
-    to { background-position: right top; }
+    from { background-position: center top; }
+    to { background-position: center bottom; }
 }
 
 @keyframes move {
-    from { background-position: left top; }
-    to { background-position: right top; }
+    from { background-position: center top; }
+    to { background-position: center bottom; }
+}
+
+#frame {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
 #tearpic {
-    background-image: url(pic/1-01.png);
-    width: 100vw;
-    height: 100vh;
-    background-size: 1200% 100vh;
+    background-image: url(pic/2-01.png);
+    height: 100%;
+    background-size: 100% 1200%;
     background-repeat: no-repeat;
-    
-    /* width: 2048px;
-    height: 1536px; */
     -webkit-animation: move 1s steps(11, end) infinite;
     -moz-animation: move 1s steps(11, end) infinite;
     animation: move 1s steps(11, end) infinite;
