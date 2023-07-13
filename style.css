@@ -1,36 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body {
-    margin: 0;
-    background-color: cornflowerblue;
+    background-color: rgba(22,105,66,0.8);
 }
 
-
-@-webkit-keyframes move {
-    from { background-position: center top; }
-    to { background-position: center bottom; }
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 20vw;
+    border: solid 3px black;
+    padding: 30px;
 }
 
-@-moz-keyframes move {
-    from { background-position: center top; }
-    to { background-position: center bottom; }
+h2 {
+    font-size: 10vw;
 }
 
-@keyframes move {
-    from { background-position: center top; }
-    to { background-position: center bottom; }
+.lucy {
+    width: 80%;
 }
 
-#frame {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+#lucy2 {
+    color: red;
 }
 
-#tearpic {
-    background-image: url(pic/2-01.png);
-    height: 100%;
-    background-size: 100% 1200%;
-    background-repeat: no-repeat;
-    -webkit-animation: move 1s steps(11, end) infinite;
-    -moz-animation: move 1s steps(11, end) infinite;
-    animation: move 1s steps(11, end) infinite;
+.cc {
+    margin: 30px;
+    color: brown;
 }
