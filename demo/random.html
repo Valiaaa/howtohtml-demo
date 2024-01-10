@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../script.js"></script>
+    
+    <title>How To Html Demo</title>
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 8vh; margin-bottom: 2vh;">
+        <h2><label for="userNumber">Enter a number:</label></h2><br>
+        <input type="number" id="userNumber" min="1" step="1">
+        <br>
+        <button id="generateButton">Generate Random Number</button>
+    
+        <h2 id="result" style="margin-top: 2vh; color: darkturquoise;"></h2>
+    </div>
+
+
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 10vh; margin-bottom: 2vh;">
+        <h2>Room Link</h2>
+        <br>
+        <button id="roomlink">Generate Random Room Link</button>
+    
+        <h2 id="room" style="margin-top: 2vh; color: darkturquoise;"></h2>
+    </div>
+</body>
+
+<script>
+
+    $("#generateButton").click(function() {
+        // Get the user-entered number
+        var userNumber = parseInt($("#userNumber").val());
+
+        // Check if the input is a valid number
+        if (!isNaN(userNumber) && userNumber > 0) {
+            // Generate a random number between 1 and the user-entered number
+            var randomNumber = Math.floor(Math.random() * userNumber) + 1;
+
+            // Display the result
+            $("#result").text("Random Number: " + randomNumber);
+        } else {
+            // Display an error if the input is not a valid number
+            $("#result").text("Please enter a valid positive number.");
+        }
+    });
+
+    $("#roomlink").click(function(){
+        var output;
+        var result = Array(6);
+        result[0] = "osmanthus_honey_brew";
+        result[1] = "under_the_umbrella";
+        result[2] = "unrequitted_love";
+        result[3] = "troubled_by_the_moon";
+        result[4] = "well-intentioned";
+        result[5] = "four_hundred_dollars";
+    
+        var Num = Math.floor(Math.random() * 6);
+        var output = result [Num];
+        $("#room").text("" + output + ".html");
+    });
+</script>
+</html>

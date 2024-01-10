@@ -2,28 +2,50 @@
 
 body {
     background-color: rgba(22,105,66,0.8);
+    margin: 0;
 }
 
 h1 {
     font-family: 'VT323', monospace;
-    font-size: 20vw;
-    border: solid 3px black;
-    padding: 30px;
+    font-size: 7vw;
+    line-height: 5vw;
+    margin: 0;
 }
 
 h2 {
-    font-size: 10vw;
+    font-family: 'VT323', monospace;
+    font-size: 5vw;
+    line-height: 4vw;
+    margin: 0;
 }
 
-.lucy {
-    width: 80%;
+input {
+    font-family: 'VT323', monospace;
+    font-size: 5vw;
+    line-height: 4vw;
+    margin: 0;
 }
 
-#lucy2 {
-    color: red;
+#title {
+    border: solid 3px black;
+    padding: 2vw 4vw;
+    width: fit-content;
+    margin: auto;
+    margin-top: 5vh;
 }
 
-.cc {
-    margin: 30px;
-    color: brown;
+a {
+    color: black;
+    text-decoration-thickness: 1px;
+}
+
+li {
+    margin-left: 4vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }

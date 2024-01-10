@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../script.js"></script>
+    
+    <title>How To Html Demo</title>
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+        <h2>current counter: <span id="counter">0</span></h2>
+        <div style="margin-top: 2vh;">
+            <button id="addOne" style="margin-right: 1vw;">+1</button>
+            <button id="addFive" style="margin-right: 1vw;">+5</button>
+            <button id="subtractThree">-3</button>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // Initialize the counter variable
+    var counter = 0;
+
+    // Update the counter display
+    function updateCounter() {
+        $("#counter").text(counter);
+    }
+
+    // Button click events
+    $("#addOne").click(function() {
+        // Increment by 1
+        counter += 1;
+        updateCounter();
+    });
+
+    $("#addFive").click(function() {
+        // Increment by 5
+        counter += 5;
+        updateCounter();
+    });
+
+    $("#subtractThree").click(function() {
+        // Decrement by 3, ensuring the counter doesn't go below 0
+        counter = Math.max(0, counter - 3);
+        updateCounter();
+    });
+</script>
+</html>
